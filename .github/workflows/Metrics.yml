@@ -22,18 +22,9 @@ jobs:
           config_timezone: Europe/Berlin
           plugin_followup: yes
           plugin_isocalendar: yes
-          plugin_isocalendar_duration: half-year
+          plugin_isocalendar_duration: full-year
           plugin_languages: yes
           
-      - uses: lowlighter/metrics@latest
-        with:
-          # ... other options
-          plugin_isocalendar: yes
-          plugin_isocalendar_duration: full-year # Display full year instead of half year
-
-      - uses: lowlighter/metrics@latest
-        with:
-           # ... other options
           plugin_skyline: yes
           plugin_skyline_year: 0            # Set to 0 to display current year
           plugin_skyline_frames: 60         # Use 60 frames (half-loop)
